@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(rgb(255, 244, 244), #fdc4c4);
+    font-family: Gilroy;
+}
+
+#nav h3 {
+    position: absolute;
+    top: 35px;
+    left: 620px;
+    color: rgba(0, 0, 0, 0.696);
+    font-family: Gilroy;
+    font-size: 15px;
+}
+
+#bag h3 {
+    position: absolute;
+    top: 35px;
+    left: 580px;
+    font-family: Gilroy;
+    color: #087f04a0;
+    border-bottom: 2px solid #087f04a0;
+    font-size: 15px;
+}
+
+#add {
+    position: relative;
+    top: 100px;
+    left: 435px;
+    height: 160px;
+    width: 600px;
+    border: 1px solid rgba(0, 0, 0, 0.838);
+}
+
+#add h3 {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-left: 180px;
+    color: rgba(0, 0, 0, 0.742);
+    font-weight: 100;
+}
+
+#add h3 span {
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+#add h4 {
+    font-size: 14px;
+    margin-left: 140px;
+    margin-top: 20px;
+    font-weight: 100;
+}
+
+#add button {
+    margin-left: 180px;
+    margin-top: 25px;
+    padding: 15px 40px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 700;
+    border-color: rgb(255, 86, 114);
+    color: rgb(255, 86, 114);
+}
+
+#add button:hover {
+    background-color: rgb(255, 86, 114);
+    color: white;
+}
+
+#item {
+    position: relative;
+    top: 130px;
+    left: 485px;
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.868);
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+}
+
+.checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background: black;
+    border-radius: 50px;
+    transition: all 0.7s;
+    --spread: 20px;
+}
+
+.container input:checked~.checkmark {
+    background: black;
+    box-shadow: -10px -10px var(--spread) 0px #5B51D8, 0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid #f0f0f0;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+}
+
+#item .select {
+    margin-left: 75px;
+    margin-top: -5px;
+    font-weight: 500;
+}
+
+#item .pic {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.adidas {
+    margin-top: -220px;
+    margin-left: 200px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.879);
+}
+
+#item h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#item h5 {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(35, 35, 35, 0.854);
+}
+
+#item h2 {
+    margin-top: 25px;
+}
+
+.size {
+    width: 70px;
+    border: 2px solid rgba(0, 0, 0, 0.772);
+    color: rgba(0, 0, 0, 0.783);
+}
+
+.qty {
+    width: 70px;
+    border: 2px solid rgba(0, 0, 0, 0.772);
+    color: rgba(0, 0, 0, 0.783);
+}
+
+#cont {
+    margin-left: 200px;
+}
+
+.cost {
+    margin-top: -90px;
+    margin-left: 100px;
+    font-weight: 500;
+}
+
+.cost span {
+    color: #dd0d52;
+    margin-left: 18px;
+}
+
+.date {
+    margin-top: 30px;
+    margin-left: 100px;
+    font-weight: 500;
+}
+
+.date span {
+    font-weight: 700;
+}
+
+#footer {
+    position: relative;
+    top: 180px;
+    left: 170px;
+    width: 1200px;
+    height: 80px;
+}
