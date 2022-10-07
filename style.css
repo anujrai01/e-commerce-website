@@ -68,19 +68,44 @@ p {
     margin: 25px 0;
 }
 
+
+
 .btn {
     display: inline-block;
-    background: #ff523b;
-    color: #ffffff;
-    padding: 8px 30px;
     margin: 30px 0;
-    border-radius: 30px;
-    transition: background 0.5s;
-}
-
-.btn:hover {
-    background: #563434;
-}
+    transition: all 0.5s;
+    border-radius: 40px;
+    background-color: #f4511e;
+    color: #FFFFFF;
+    padding: 8px 30px;
+    width: 181px;
+    cursor: pointer;
+  }
+  
+  .btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 2.5s;
+  }
+  
+  .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
 .header {
     background: radial-gradient(#fff, #ffd6d6);
